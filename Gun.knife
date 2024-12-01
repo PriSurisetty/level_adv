@@ -1,0 +1,26 @@
+import greenfoot.*;
+
+public class Gun extends Weapon {
+
+    public Gun() {
+        // Gun's damage level
+        this.damage = 20;  
+        this.sprite = new GreenfootImage("gun_image.png");  
+    }
+
+    @Override
+    public void use(Player player) {
+        // When the player presses space, shoot 
+        if (Greenfoot.isKeyDown("space")) {
+            shootBullet(player);
+        }
+    }
+
+    private void shootBullet(Player player) {
+        int playerRotation = player.getRotation();  
+        
+        // Create a new bullet in the direction the player is facing
+        Bullet bullet = new Bullet(playerRotation);
+        getWorld().addObject(bullet, player.getX(), player.getY());  
+    }
+}

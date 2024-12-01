@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Knife
+comment1.params=world
+comment1.target=Knife(greenfoot.World)
+comment2.params=x\ y
+comment2.target=void\ setPosition(int,\ int)
+comment3.params=player\ mouseInfo
+comment3.target=void\ use(Player,\ greenfoot.MouseInfo)
+comment4.params=mouseInfo
+comment4.target=void\ checkForCollisions(greenfoot.MouseInfo)
+numComments=5
